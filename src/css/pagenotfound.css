@@ -1,0 +1,13 @@
+.container-error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.container-error h3{
+    color: rgb(197, 25, 25);
+    font-family: "Bebas Neue";
+    font-size: 100px;
+    text-align: center;
+}
+

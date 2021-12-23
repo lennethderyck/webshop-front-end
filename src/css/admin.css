@@ -1,0 +1,27 @@
+.admin-box{
+    padding-left: 65px;
+}
+.box-admin-pages{
+    width: 100%;
+    padding-top: 20px;
+    margin-left: 100px;
+    height: 100%;
+}
+.orders-box{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    min-height: 80vh;
+    align-items: center;
+}
+.orders-box .myOrder-titel{
+    padding: 20px;
+    font-family: "Bodoni Moda";
+}
+
+@media screen and (max-width: 960px) {
+    .box-admin-pages{
+        margin-left: 20px;
+    }
+  }

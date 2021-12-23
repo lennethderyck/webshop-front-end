@@ -1,0 +1,156 @@
+.container-order{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    flex-direction: column;
+}
+.container-order h1{
+    margin: 50px 0;
+    font-family: "Yeseva One";
+    font-size: 50px;
+    border-bottom: 3px solid black;
+}
+.title-order{
+    width: 200px;
+    text-align: center;
+    align-self: center;
+}
+.total-and-btn{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.amount{
+  font-weight: bold;
+  font-size: 30px;
+}
+.container-one{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-table{
+    width: 80%;
+  }
+  .responsive-table{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .responsive-table .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-table .col-1 {
+    flex-basis: 25%;
+  }
+  .responsive-table .col-2 {
+    flex-basis: 25%;
+  }
+  .responsive-table .col-2 img{
+    height: 100px;
+  }
+  .container-order-items{
+    display: flex;
+    background: rgb(255, 255, 255);
+  }
+  .container-order-items .col{
+    align-self: center;
+  }
+  .responsive-table .col-3 {
+    flex-basis: 25%;
+  }
+  .responsive-table .col-4 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-5 {
+    flex-basis: 5%;
+  }
+  .remove{
+    background: transparent;
+    color: #d31515;
+    border: 2px solid #d31515;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.remove:hover{
+  background: #ad1414;
+  color: white;
+}
+.clear-btn-order{
+  border: none;
+  display: flex;
+  border-radius: 10px;
+  padding: 2px 15px;
+  align-items: center;
+  gap: 10px;
+  background: rgba(231, 59, 59, 0.774);
+  color: #fff;
+}
+.checkout-btn{
+  border: none;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  background: rgba(230, 144, 33, 0.774);
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+
+  @media all and (max-width: 767px) {
+    .responsive-table{
+      width: 100%;
+    }
+    .responsive-table .table-header {
+      display: none;
+    }
+    .responsive-table li {
+      border-radius: 10px;
+      padding: 5px 0;
+      display: block;
+      margin-bottom: 25px;
+      background-color: rgb(240, 240, 240);
+    }
+    .responsive-table .col{
+      width: 100%;
+    }
+    .responsive-table .col {
+      display: flex;
+      padding: 5px 0;
+    }
+    .responsive-table .col:before {
+      color: #6C7A89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    }
+    .amount{
+      font-size: 20px;
+    }
+    .total-and-btn{
+      width: 100%;
+    }
+  }

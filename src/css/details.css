@@ -1,0 +1,135 @@
+.container-details{
+    height: 90vh;
+}
+.row-details{
+    font-family: "PT Serif";
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.img-box-details{
+    flex-grow: 2;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-box-details img{
+    height: 100%;
+}
+.details-box-details{
+    flex-basis: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 150px;
+}
+.details-box-details h1{
+    font-family: "Oswald";
+    color: #141414;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: start;
+    margin: 20px 0;
+}
+.details-box-details h2{
+    font-family: "Bodoni Moda";
+    color: #141414;
+    font-weight: 100;
+    text-align: start;
+    border-left: solid red 2px;
+    padding-left: 10px;
+}
+.details-box-details h3{
+    font-family: "Bodoni Moda";
+    color: #141414;
+    font-weight: 100;
+    text-align: start;
+    color: rgb(218, 14, 14);
+    margin: 20px 0;
+}
+.details-box-details p{
+    margin: 20px 0;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+}
+
+.buttons .add{
+    background: transparent;
+    color: #141414;
+    border: 2px solid #141414;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+}
+
+.buttons .add:hover{
+    background: #14141467;
+    border: 2px solid #14141467;
+    color: white;
+}
+
+.buttons button:hover{
+    background: #2ad6b1;
+    color: white;
+}
+
+.buttons .remove{
+    background: transparent;
+    border-radius: 0;
+    color: #d31515;
+    border: 2px solid #d31515;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+}
+
+
+.buttons .remove:hover{
+    background: #ad1414;
+    color: white;
+}
+.buttons .edit{
+    background: transparent;
+    color: #374eb3;
+    border: 2px solid #374eb3;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+.buttons .edit:hover{
+    background: #374eb3;
+    color: white;
+}
+@media screen and (max-width: 960px) {
+    .row-details{
+        flex-direction: column-reverse;
+    }
+    .container-details{
+        height: auto;
+    }
+    .img-box-details{
+        margin: 50px 0;
+        width: 100%;
+    }
+    .details-box-details{
+        width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .img-box-details{
+        margin: 50px 0;
+        width: 100%;
+        height: 80%;
+    }
+    .details-box-details{
+        padding-left: 0px;
+    }
+}

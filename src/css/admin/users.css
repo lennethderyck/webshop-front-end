@@ -1,0 +1,141 @@
+
+
+.container-table-users{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container-table-users h2{
+    font-family: "Bodoni Moda";
+    color: #141414;
+    padding: 20px 0;
+  }
+  .responsive-table-users{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+.responsive-table-users li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    margin-bottom: 25px;
+}
+.responsive-table-users .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    display: flex;
+    justify-content: center;
+}
+  .responsive-table-users .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .container-order-items{
+    display: flex;
+    background-color: rgb(240, 240, 240);
+  }
+  .responsive-table-users .col-1 {
+    flex-basis: 33%;
+  }
+  .responsive-table-users .col-2 {
+    flex-basis: 50%;
+  }
+  .responsive-table-users .col-3 {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .remove{
+    background: transparent;
+    color: #d31515;
+    border: 2px solid #d31515;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.remove:hover{
+  background: #ad1414;
+  color: white;
+}
+.clear-btn{
+  border: none;
+  display: flex;
+  border-radius: 10px;
+  padding: 2px 15px;
+  align-items: center;
+  gap: 10px;
+  background: rgba(231, 59, 59, 0.774);
+  color: #fff;
+}
+@media all and (max-width: 767px) {
+  .container-table-users{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 40px;
+    font-size: 14px;
+  }
+  .responsive-table-users .container-order-items{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .responsive-table-users{
+    width: 100%;
+  }
+  .responsive-table-users .col{
+    width: 100;
+    margin: 3px 0;
+    padding: 0;
+  }
+  .responsive-table-users .table-header {
+    display: none;
+  }
+  .responsive-table-users li {
+    border-radius: 10px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .responsive-table-users .container-order-items{
+    display: flex;
+
+  }
+  .responsive-table-users .col{
+    width: 80%;
+  }
+  .responsive-table-users .col {
+    display: flex;
+    padding: 5px 0;
+  }
+  .responsive-table-users .col-3 {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .responsive-table-users .col-3 p{
+    margin: 0 5px;
+  }
+  .responsive-table-users .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    text-align: right;
+  }
+}
+

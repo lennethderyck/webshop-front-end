@@ -1,0 +1,112 @@
+.container-table-painting{
+    width: 80%;
+    flex-grow: 2;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .container-table-painting h2{
+    font-family: "Bodoni Moda";
+    color: #141414;
+    padding: 20px 0;
+  }
+
+  .responsive-table-painting{
+    position: relative;
+  }
+  .responsive-table-painting .container-order-items{
+      padding: 5px 10px;
+  }
+  
+  .responsive-table-painting li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .responsive-table-painting .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .responsive-table-painting .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+  }
+  .responsive-table-painting .col-1 {
+    flex-basis: 15%;
+  }
+  .responsive-table-painting .col-2 {
+    flex-basis: 20%;
+  }
+  .responsive-table-painting .col-3 img{
+    height: 100px;
+  }
+  .responsive-table-painting .col-3 {
+    flex-basis: 20%;
+  }
+  .responsive-table-painting .col-4 {
+    flex-basis: 20%;
+  }
+  .responsive-table-painting .col-5 {
+    flex-basis: 15%;
+  }
+  .responsive-table-painting .col-6 {
+    flex-basis: 5%;
+  }
+  .responsive-table-painting .col-7 {
+    flex-basis: 5%;
+  }
+
+  .edit{
+    background: transparent;
+    border-radius: 10px;
+    color: #374eb3;
+    border: 2px solid #374eb3;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 11px 14px;
+    margin: 0 5px;
+}
+.edit:hover{
+    background: #374eb3;
+    color: white;
+}
+
+@media all and (max-width: 767px) {
+  .responsive-table-painting{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .responsive-table-painting .container-order-items{
+    width: 100%;
+    flex-direction: column;
+  }
+  .responsive-table-painting .table-header {
+    display: none;
+  }
+  .responsive-table-painting li {
+    border-radius: 10px;
+    padding: 5px 0;
+    display: block;
+    margin-bottom: 25px;
+    background-color: rgb(240, 240, 240);
+  }
+  .responsive-table-painting .col{
+    width: 100%;
+  }
+  .responsive-table-painting .col {
+    display: flex;
+    padding: 5px 0;
+  }
+  .responsive-table-painting .col:before {
+    color: #6C7A89;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+}

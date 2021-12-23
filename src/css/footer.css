@@ -1,0 +1,42 @@
+.extra{
+    margin: 0 100px;
+    color: #263238;
+}
+.extra-links{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.link{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+.instagram{
+    background-color: #ac2bac00;
+    border: none;
+}
+
+.instagram:hover{
+    background-color: #ac2bac00;
+}
+
+footer{
+    background: rgb(252, 252, 252);
+    box-shadow: 0px 5px 20px 0px rgb(0, 0, 0);
+    margin-top: 100px;
+}
+
+.copyright{
+    color: #e8505b;
+}
+
+.fa-instagram{
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.fa-instagram:hover{
+    color: #e65478;
+}

@@ -1,0 +1,47 @@
+.create{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.create h2{
+    font-size: 30px;
+    font: 500;
+    color: #141414;
+    margin-bottom: 12px;
+    font-family: "Bodoni Moda";
+}
+
+.create .create-input{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+}
+
+.create button{
+    background: #2ad6b1;
+    color: #fff;
+    margin: 20px 0;
+    border: 0;
+    padding: 8px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+
+.create button:hover{
+    background: #23aa8d;
+}
+
+@media all and (max-width: 767px){
+    .create{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    width: 70%;
+    }
+}
