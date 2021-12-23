@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/webshop-front-end/static/css/main.a02085be.chunk.css",
+    "main.js": "/webshop-front-end/static/js/main.c74ed5b1.chunk.js",
+    "main.js.map": "/webshop-front-end/static/js/main.c74ed5b1.chunk.js.map",
+    "runtime-main.js": "/webshop-front-end/static/js/runtime-main.06e0e8ba.js",
+    "runtime-main.js.map": "/webshop-front-end/static/js/runtime-main.06e0e8ba.js.map",
+    "static/css/2.4659568d.chunk.css": "/webshop-front-end/static/css/2.4659568d.chunk.css",
+    "static/js/2.fefc80fa.chunk.js": "/webshop-front-end/static/js/2.fefc80fa.chunk.js",
+    "static/js/2.fefc80fa.chunk.js.map": "/webshop-front-end/static/js/2.fefc80fa.chunk.js.map",
+    "static/js/3.54e8603a.chunk.js": "/webshop-front-end/static/js/3.54e8603a.chunk.js",
+    "static/js/3.54e8603a.chunk.js.map": "/webshop-front-end/static/js/3.54e8603a.chunk.js.map",
+    "index.html": "/webshop-front-end/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/webshop-front-end/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.a02085be.chunk.css.map": "/webshop-front-end/static/css/main.a02085be.chunk.css.map",
+    "static/js/2.fefc80fa.chunk.js.LICENSE.txt": "/webshop-front-end/static/js/2.fefc80fa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06e0e8ba.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.fefc80fa.chunk.js",
+    "static/css/main.a02085be.chunk.css",
+    "static/js/main.c74ed5b1.chunk.js"
+  ]
+}
