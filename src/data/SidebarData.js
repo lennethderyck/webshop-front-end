@@ -4,7 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 
 //Data to store in the SideBar component
 export const SidebarData = [{
-    title: 'Dash',
+    title: 'Dashboard',
     path: '/admin',
     icon: < AiIcons.AiOutlineHome color = "#141414" / > ,
     cName: 'side-text'
