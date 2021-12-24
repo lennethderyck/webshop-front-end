@@ -38,7 +38,7 @@ const MyOrderList = () => {
             <div className="col col-3">Amount</div>
             <div className="col col-4">Price</div>
           </li>
-          {orders.order &&
+          {orders.length !== 0 &&
             orders.order.map((o, index) => (
               <li className="container-order-items" key={o.id}>
                 <div className="col col-1" data-label="Nr">

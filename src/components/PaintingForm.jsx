@@ -13,7 +13,7 @@ import { TypeData } from "../data/typesData";
 const validationRuleRequired = { required: "This field is required!" };
 
 export default function PaintingForm() {
-  const types = TypeData.paintings.map((x) => x.type);
+  const types = TypeData.map((x) => x.type);
   const [image, setImage] = useState(null);
   const [data, setData] = useState({});
   const [progress, setProgress] = useState(0);
