@@ -9,6 +9,7 @@ import LabelInput from "./form/LabelInput";
 import LabelSelect from "./form/LabelSelect";
 import Sidebar from "./SideBar";
 import { TypeData } from "../data/typesData";
+import { usePaintings } from "../context/PaintingProvider";
 
 const validationRuleRequired = { required: "This field is required!" };
 
