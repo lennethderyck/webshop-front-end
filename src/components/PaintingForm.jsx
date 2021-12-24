@@ -1,6 +1,5 @@
 import { useEffect, useCallback, useState } from "react";
 import { useForm, FormProvider } from "react-hook-form";
-import { usePaintings } from "../context/PaintingProvider";
 import { useHistory, useLocation } from "react-router-dom";
 import "../css/form.css";
 import Swal from "sweetalert2";
@@ -9,12 +8,12 @@ import { getDownloadURL, ref, uploadBytesResumable } from "@firebase/storage";
 import LabelInput from "./form/LabelInput";
 import LabelSelect from "./form/LabelSelect";
 import Sidebar from "./SideBar";
+import { TypeData } from "../data/typesData";
 
 const validationRuleRequired = { required: "This field is required!" };
 
 export default function PaintingForm() {
-  const { paintings } = usePaintings();
-  const types = Array.from(new Set(paintings.map((x) => x.type)));
+  const types = TypeData.paintings.map((x) => x.type);
   const [image, setImage] = useState(null);
   const [data, setData] = useState({});
   const [progress, setProgress] = useState(0);
