@@ -8,11 +8,13 @@ const MyOrderList = () => {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
   const [orders, setOrders] = useState([]);
+  const [initialized, setInitialized] = useState(false);
 
   //Gets all the data needed to make an order list from the database
   const fetchdata = useCallback(async () => {
     const data = await myOrders(userInfo.user.id);
     setOrders(data);
+    setInitialized(true);
   }, [userInfo, myOrders]);
 
   useEffect(() => {
@@ -38,7 +40,7 @@ const MyOrderList = () => {
             <div className="col col-3">Amount</div>
             <div className="col col-4">Price</div>
           </li>
-          {orders.length !== 0 &&
+          {initialized &&
             orders.order.map((o, index) => (
               <li className="container-order-items" key={o.id}>
                 <div className="col col-1" data-label="Nr">

@@ -60,7 +60,7 @@ export const AuthProvider = ({
   const [error, setError] = useState('');
   const [token, setToken] = useState(localStorage.getItem(JWT_TOKEN_KEY));
   const [user, setUser] = useState(null);
-  const [users, setUsers] = useState(null);
+  const [users, setUsers] = useState([]);
 
   const refreshUsers = useCallback(async () => {
     try {
@@ -77,7 +77,7 @@ export const AuthProvider = ({
   }, []);
 
   useEffect(() => {
-    if (!users) {
+    if (users?.length === 0) {
       refreshUsers();
     }
   }, [users, refreshUsers]);

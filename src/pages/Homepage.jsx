@@ -29,7 +29,7 @@ export default function Homepage() {
           </Link>
         </div>
         <div className="header-svg">
-          <img src="/img/PaintBrush.jpg" alt="Painting" />
+          <img src="../img/PaintBrush.jpg" alt="Painting" />
         </div>
       </div>
       <div className="row1-container">
