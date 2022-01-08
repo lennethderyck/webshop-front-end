@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 
 
 export default function MyOrders(){
-        const { myOrders, loading } = useOrders();
+        const { myOrders } = useOrders();
         const userSignin = useSelector((state) => state.userSignin);
         const { userInfo } = userSignin;
         const [orders, setOrders] = useState({});
