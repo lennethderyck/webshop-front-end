@@ -53,8 +53,8 @@ export default function PaintingForm() {
       setValue("price", currentPainting.price);
       setValue("description", currentPainting.description);
       const size = currentPainting.size.split("x");
-      setValue("width", size[0]);
-      setValue("height", size[0]);
+      setValue("width", size[0].slice(0, -2));
+      setValue("height", size[1].slice(0, -1));
     } else {
       reset();
     }

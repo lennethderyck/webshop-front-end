@@ -1,35 +1,15 @@
 import "../css/orders.css";
-import { useOrders } from "../context/OrderProvider";
-import { useCallback, useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 
-const MyOrderList = () => {
-  const { myOrders, loading } = useOrders();
-  const userSignin = useSelector((state) => state.userSignin);
-  const { userInfo } = userSignin;
-  const [orders, setOrders] = useState([]);
-  const [initialized, setInitialized] = useState(false);
+const MyOrderList = ({orders}) => {
 
-  //Gets all the data needed to make an order list from the database
-  const fetchdata = useCallback(async () => {
-    const data = await myOrders(userInfo.user.id);
-    setOrders(data);
-    setInitialized(true);
-  }, [userInfo, myOrders]);
+    if (orders === "loading") return (
+      <div className="container">
+          <div className="col-10 mx-auto my-2 text-center text-title">
+            <h1 className="text-capitalize font-weight-bold title my-4" data-cy="loading">Loading...</h1>
+          </div>
+      </div>
+      )
 
-  useEffect(() => {
-    fetchdata();
-  }, [fetchdata]);
-
-  if (loading) return (
-    <div className="container">
-        <div className="col-10 mx-auto my-2 text-center text-title">
-          <h1 className="text-capitalize font-weight-bold title my-4" data-cy="loading">Loading...</h1>
-        </div>
-    </div>
-    );
-
-  //Shows all the orders from the user that is signed in
   return (
     <>
       <div className="container-table">
@@ -40,7 +20,7 @@ const MyOrderList = () => {
             <div className="col col-3">Amount</div>
             <div className="col col-4">Price</div>
           </li>
-          {initialized &&
+          {orders !== "loading" &&
             orders.order.map((o, index) => (
               <li className="container-order-items" key={o.id}>
                 <div className="col col-1" data-label="Nr">
